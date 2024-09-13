@@ -1,8 +1,8 @@
 #include "DocGiaNguoiLon.h"
 
 void DocGiaNguoiLon::input() {
-    cin.ignore();
     DocGia::input();
+    cin.ignore();
     cout << "Nhap CMND: "; cin >> CMND;
 }
 

@@ -7,7 +7,7 @@ using namespace std;
 class DocGiaTreEm : public DocGia   // children
 {
     private:
-        string representative;
+        string nguoiDaiDien;
     public:
         void input();
         void output();

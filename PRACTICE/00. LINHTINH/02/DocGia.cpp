@@ -1,9 +1,9 @@
 #include "DocGia.h"
 
 void DocGia::input() {
-    // cin.ignore();  // xoa bo nho dem
-    cout << "Nhap ho ten doc gia: "; getline(cin, fullName); // cin.ignore();
-    cout << "Nhap ngay lap the (dd/mm/yy): "; cin >> cardCreationDate; cin.ignore();
+    cin.ignore();  // xoa bo nho dem
+    cout << "Nhap ho ten doc gia: "; getline(cin, fullName); 
+    cout << "Nhap ngay lap the (dd/mm/yy): "; cin >> cardCreationDate; 
     cout << "Nhap so thang co hieu luc: "; cin >> validMonths;
 }
 

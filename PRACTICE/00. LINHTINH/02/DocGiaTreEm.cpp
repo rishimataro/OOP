@@ -1,14 +1,15 @@
 #include "DocGiaTreEm.h"
 
 void DocGiaTreEm::input() {
-    cin.ignore();
+    // cin.ignore();
     DocGia::input();
-    cout << "Nhap ho ten nguoi dai dien: "; getline(cin, representative);
+    cin.ignore();
+    cout << "Nhap ho ten nguoi dai dien: "; getline(cin, nguoiDaiDien);
 }
 
 void DocGiaTreEm::output() {
     DocGia::output();
-    cout << "Ho ten nguoi dai dien: " << representative << endl;
+    cout << "Ho ten nguoi dai dien: " << nguoiDaiDien << endl;
 }
 
 int DocGiaTreEm::cardCalculation() {
