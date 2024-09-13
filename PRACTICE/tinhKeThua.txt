@@ -1,0 +1,27 @@
+class A {
+public:
+    int x;
+protected:
+    int y;
+private:
+    int z;
+};
+
+class B : public A {
+    // x: public
+    // y: protected
+    // z là private nên không thể được truy cập từ lớp B
+};
+
+class C : protected A {
+    // x: protected
+    // y: protected
+    // z là private nên không thể được truy cập từ lớp C
+};
+
+class D : private A    // 'private' is default for classes
+{
+    // x: private
+    // y: private
+    // z là private nên không thể được truy cập từ lớp D
+};
