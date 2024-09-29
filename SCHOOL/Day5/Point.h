@@ -2,13 +2,9 @@
 
 class Point
 {
-    public:
-        static int count;
-        const static int t = 10;
     private:
         int xVal;
         int yVal;
-        const int n;
     public:
         Point(int xVal = 0, int yVal = 0);
         Point(const Point& p);
@@ -21,4 +17,6 @@ class Point
 
         void show();
         void tinhTien(int x);
+
+        friend void changePoint(Point& p);
 };

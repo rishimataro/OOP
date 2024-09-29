@@ -3,5 +3,32 @@
     "code-runner.executorMap": {
         "cpp": "cd $dir && g++ -std=c++14 *.cpp -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     },
-    "terminal.integrated.defaultProfile.windows": "Git Bash"
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "files.associations": {
+        "iostream": "cpp",
+        "istream": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "ostream": "cpp",
+        "format": "cpp",
+        "xstring": "cpp",
+        "bit": "cpp",
+        "charconv": "cpp",
+        "exception": "cpp",
+        "iterator": "cpp",
+        "type_traits": "cpp",
+        "xmemory": "cpp",
+        "xtr1common": "cpp",
+        "xutility": "cpp",
+        "algorithm": "cpp",
+        "iosfwd": "cpp",
+        "ios": "cpp",
+        "memory": "cpp",
+        "optional": "cpp",
+        "streambuf": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp",
+        "xiosbase": "cpp",
+        "ctime": "cpp"
+    }
 }

@@ -75,6 +75,8 @@ void findMin(int **p, const int& row, const int& col) {
     delete[] a;
 }
 
+
+
 int main() {
     cout << "NHAP THONG TIN" << endl;
 

@@ -1,18 +1,18 @@
 #include "Point.h"
 
-Point::Point(int xVal = 0, int yVal = 0) : n(2) {
-    this->count++;
+Point::Point(int xVal, int yVal) {
     this->xVal = xVal;
     this->yVal = yVal;
 }
 
-Point::Point(const Point& p) : n(3) {
-    this->count++; 
+Point::Point(const Point& p) {
     this->xVal = p.xVal;
     this->yVal = p.yVal;
 }
 
-Point::~Point() { }
+Point::~Point() {
+    cout << "Huy Point!" << endl;
+ }
 
 void Point::setXVal(int xVal) { this->xVal = xVal; }
 int Point::getXVal() const { return this->xVal; }
@@ -28,4 +28,7 @@ void Point::tinhTien(int x) {
     yVal += x;
 }
 
-int Point::count = 0;
+void changePoint(Point& p) {
+    p.xVal = 10;
+    p.yVal= 30;
+}
